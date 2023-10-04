@@ -59,8 +59,7 @@ public class PlayerController : MonoBehaviour
     void FlipCharacter()
     {
         facingRight = !facingRight;
-        transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, -transform.localScale.z);
-        weapon.localScale = new Vector3(-weapon.localScale.x, weapon.localScale.y, -weapon.localScale.z);
+        transform.RotateAround (transform.position, transform.up, 180f);
     }
 
     // For testing in editor
