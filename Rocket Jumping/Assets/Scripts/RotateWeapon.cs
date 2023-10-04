@@ -27,6 +27,9 @@ public class RotateWeapon : MonoBehaviour
 		mousePos.y = mousePos.y - objectPos.y;
 
 		float temp = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
+
+		//Debug.Log(temp);
+
 		transform.rotation = Quaternion.Euler(new Vector3(0, 0, temp));
 
 		if (Input.GetButtonDown("Fire1"))
