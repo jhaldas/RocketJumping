@@ -15,7 +15,7 @@ public class ShootWeapon : MonoBehaviour
         {
             Rigidbody instantiatedProjectile = Instantiate(projectile, cannonballSpawnPoint.position, transform.rotation) as Rigidbody;
  
-            instantiatedProjectile.velocity = transform.TransformDirection(new Vector3(0, speed, 0));
+            instantiatedProjectile.velocity = transform.TransformDirection(new Vector3(speed, 0, 0));
         }
     }
 
